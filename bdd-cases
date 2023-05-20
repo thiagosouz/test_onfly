@@ -1,0 +1,31 @@
+Funcionalidade: Gerar um pedido de produto no site da Amazon
+Eu como usuário do site da Amazon
+Quero ter a opção de buscar um produto, selecionar, adicionar ao carrinho e fechar um pedido
+Para que eu consiga ter autonomia e gerenciar o que desejo comprar
+
+Case 01: Pesquisando produto no site da Amazon
+Dado que estou no site da Amazon no frame de pesquisa
+Quando eu buscar algum tipo de produto na barra de pesquisa
+E clicar em um nome de produto específico retornado pela barra de pesquisa
+Então o sistema deverá redirecionar para uma tela de resultados de pesquisa
+
+Case 02: Selecionando produto no site da Amazon
+Dado que estou na tela de resultados de pesquisa do site da Amazon
+Quando eu clicar no primeiro produto retornado da lista após a pesquisa realizada
+E existir algum produto no qual eu busquei
+Então o sistema deverá redirecionar para a tela de detalhes do produto
+
+Case 03: Adicionando produto ao carrinho
+Dado que estou na tela de detalhes do produto selecionado
+Quando eu clicar em 'Adicionar ao carrinho'
+E o produto estiver com status 'Em estoque'
+Então o sistema deverá redirecionar para a tela de 'carrinho' onde estará meu produto selecionado
+E deve existir a mensagem na tela 'Adicionado ao carrinho' confirmando que o item selecionado foi adicionado ao carrinho
+
+Case 04: Fechando um pedido de produto no site da Amazon
+Dado que estou na tela de carrinho onde estará meu produto selecionado
+Quando eu clicar em 'Fechar pedido'
+E existir no mínimo um produto selecionado em estoque
+E eu nao estiver logado no site
+Então o sistema deverá redirecionar para a tela de login
+E eu terei que logar no site ou criar uma conta para prosseguir com a geraçao de pedido

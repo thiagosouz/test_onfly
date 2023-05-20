@@ -1,0 +1,19 @@
+{
+  "name": "test_onfly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open --config baseUrl=https://www.amazon.com.br/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "cypress": "^12.12.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "cypress-plugin-xhr-toggle": "^1.0.0"
+  }
+}
