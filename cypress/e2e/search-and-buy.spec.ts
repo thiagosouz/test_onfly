@@ -1,4 +1,4 @@
-const product = "cd arctic monkeys"
+const product = "relogio amazfit"
 const params = {
   product
 }
