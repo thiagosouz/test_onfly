@@ -1,17 +1,8 @@
-const product = "relogio amazfit"
-const params = {
-  product
-}
+const product = "bicicleta caloi"
 
 describe('e2e journey - Purchase flow', () => {
   before(() => {
-    cy.visit('/', {
-      onBeforeLoad(win) {
-        cy.stub(win, 'open', (url) => {
-          cy.task('setHref', url)
-        }).as('windowOpen')
-      },
-    })
+    cy.visit('/')
   })
 
   it('Efetuando uma pesquisa e verificando disponilidade...', () => {
