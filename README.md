@@ -6,8 +6,8 @@
 
 </head>
 <body>
-	<h1>End-to-end web testing example</h1>
-<p>Projeto de automação de Testes</p>
+	<h1>End-to-End Web Test Example with Custom Commands for Cypress</h1>
+<p>Adding Custom Commands to Cypress Typescript</p>
 
 <h2>Instalação</h2>
 
